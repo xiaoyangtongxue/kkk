@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg_blue"
+    android:layout_height="match_parent">
+
+
+    <Utils.AlphaTitleScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/as"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:layout_width="match_parent"
+                android:id="@+id/banner"
+                android:layout_height="230dp"
+                >
+            </com.youth.banner.Banner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="精彩推荐"
+        android:textColor="#fafafa"
+        android:padding="5dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycles"
+        android:padding="5dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/et_sousuo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/edittext_shap"
+                android:paddingLeft="10dp"
+                android:textColorHint="#fff"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/search"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="一念天堂"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </Utils.AlphaTitleScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3247cc"
+        android:visibility="gone"
+        android:id="@+id/show"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="标题"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

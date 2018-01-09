@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="5dp"
+        app:cardBackgroundColor="#06b3ed"
+        android:orientation="vertical"
+        android:layout_height="230dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list_movie"
+        android:layout_width="match_parent"
+        fresco:roundedCornerRadius="12dp"
+        android:layout_height="match_parent"
+        fresco:placeholderImage="@mipmap/default_200"
+        />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:id="@+id/list_movie_name"
+        android:textColor="#fffefe"
+        />
+
+</LinearLayout>
